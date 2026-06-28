@@ -70,6 +70,7 @@
 #include "poglavlja/1-uvod.typ"
 #include "poglavlja/2-stanje.typ"
 #include "poglavlja/3-teorijske-osnove.typ"
+#include "poglavlja/4-arhitektura-rustyjudge.typ"
 #include "poglavlja/7-zakljucak.typ"
 
 
