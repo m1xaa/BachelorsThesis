@@ -71,6 +71,8 @@
 #include "poglavlja/2-stanje.typ"
 #include "poglavlja/3-teorijske-osnove.typ"
 #include "poglavlja/4-arhitektura-rustyjudge.typ"
+#include "poglavlja/5-kontrolno-protocni-graf.typ"
+#include "poglavlja/6-analiza-zivosti-podataka.typ"
 #include "poglavlja/7-zakljucak.typ"
 
 
