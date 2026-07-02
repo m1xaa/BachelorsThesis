@@ -73,6 +73,7 @@
 #include "poglavlja/4-arhitektura-rustyjudge.typ"
 #include "poglavlja/5-kontrolno-protocni-graf.typ"
 #include "poglavlja/6-analiza-zivosti-podataka.typ"
+#include "poglavlja/7-pravila.typ"
 #include "poglavlja/7-zakljucak.typ"
 
 
