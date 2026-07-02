@@ -75,6 +75,7 @@
 #include "poglavlja/6-analiza-zivosti-podataka.typ"
 #include "poglavlja/7-pravila.typ"
 #include "poglavlja/8-cli-vscode-integracija.typ"
+#include "poglavlja/9-benchmark.typ"
 #include "poglavlja/7-zakljucak.typ"
 
 
