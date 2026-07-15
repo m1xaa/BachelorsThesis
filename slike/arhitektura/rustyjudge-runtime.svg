@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="620" viewBox="0 0 1160 620" role="img" aria-label="Runtime structure around the shared RustyJudge core">
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
     </marker>
     <style>
       .outer { fill: #f9fafb; stroke: #6b7280; stroke-width: 2; }
@@ -9,55 +9,56 @@
       .entry { fill: #eef6ff; stroke: #2563eb; stroke-width: 2; }
       .core { fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; }
       .tool { fill: #fff7ed; stroke: #ea580c; stroke-width: 2; }
-      .arrow { stroke: #1f2937; stroke-width: 2; fill: none; marker-end: url(#arrow); }
-      .text { font-family: Liberation Sans, Arial, sans-serif; font-size: 18px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
-      .small { font-size: 14px; }
-      .title { font-size: 24px; font-weight: bold; }
+      .arrow { stroke: #1f2937; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .text { font-family: Arial, sans-serif; font-size: 18px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+      .small { font-family: Arial, sans-serif; font-size: 14px; fill: #374151; text-anchor: middle; dominant-baseline: middle; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
     </style>
   </defs>
 
-  <text x="550" y="32" class="text title">Runtime structure around the shared RustyJudge core</text>
+  <text x="580" y="34" class="title">Runtime structure around the shared RustyJudge core</text>
 
-  <rect x="60" y="75" width="300" height="160" rx="12" class="entry"/>
-  <text x="210" y="105" class="text">CLI binary</text>
-  <text x="210" y="132" class="text small">src/bin/rusty_judge.rs</text>
-  <text x="210" y="157" class="text small">run_cli, file reading, JSON reports</text>
+  <rect x="55" y="88" width="260" height="92" rx="10" class="entry"/>
+  <text x="185" y="116" class="text">CLI binary</text>
+  <text x="185" y="142" class="small">src/bin/rusty_judge.rs</text>
+  <text x="185" y="164" class="small">files to JSON reports</text>
 
-  <rect x="60" y="385" width="300" height="160" rx="12" class="entry"/>
-  <text x="210" y="415" class="text">VS Code extension</text>
-  <text x="210" y="442" class="text small">TypeScript language client</text>
-  <text x="210" y="467" class="text small">starts platform LSP binary</text>
+  <rect x="55" y="258" width="260" height="92" rx="10" class="entry"/>
+  <text x="185" y="286" class="text">LSP binary</text>
+  <text x="185" y="312" class="small">src/bin/rusty_judge_lsp.rs</text>
+  <text x="185" y="334" class="small">tower-lsp over stdio</text>
 
-  <rect x="420" y="75" width="300" height="160" rx="12" class="entry"/>
-  <text x="570" y="105" class="text">LSP binary</text>
-  <text x="570" y="132" class="text small">src/bin/rusty_judge_lsp.rs</text>
-  <text x="570" y="157" class="text small">tower-lsp over stdio</text>
+  <rect x="55" y="428" width="260" height="92" rx="10" class="entry"/>
+  <text x="185" y="456" class="text">VS Code extension</text>
+  <text x="185" y="482" class="small">TypeScript client</text>
+  <text x="185" y="504" class="small">starts the LSP process</text>
 
-  <rect x="420" y="385" width="300" height="160" rx="12" class="tool"/>
-  <text x="570" y="415" class="text">Benchmarks</text>
-  <text x="570" y="442" class="text small">Criterion + generated corpus</text>
-  <text x="570" y="467" class="text small">phase-level measurements</text>
+  <rect x="395" y="438" width="260" height="92" rx="10" class="tool"/>
+  <text x="525" y="466" class="text">Benchmarks</text>
+  <text x="525" y="492" class="small">Criterion + corpus</text>
+  <text x="525" y="514" class="small">phase measurements</text>
 
-  <rect x="790" y="170" width="260" height="280" rx="14" class="outer"/>
-  <text x="920" y="200" class="text">rusty_judge library</text>
+  <rect x="760" y="125" width="335" height="370" rx="14" class="outer"/>
+  <text x="927.5" y="158" class="text">rusty_judge library</text>
 
-  <rect x="820" y="230" width="200" height="44" rx="8" class="core"/>
-  <text x="920" y="253" class="text small">parser</text>
+  <rect x="815" y="205" width="225" height="48" rx="8" class="core"/>
+  <text x="927.5" y="229" class="text">parser</text>
 
-  <rect x="820" y="285" width="200" height="44" rx="8" class="core"/>
-  <text x="920" y="308" class="text small">cfg + semantic model</text>
+  <rect x="815" y="272" width="225" height="48" rx="8" class="core"/>
+  <text x="927.5" y="296" class="text">semantic model</text>
 
-  <rect x="820" y="340" width="200" height="44" rx="8" class="core"/>
-  <text x="920" y="363" class="text small">linter + rules</text>
+  <rect x="815" y="339" width="225" height="48" rx="8" class="core"/>
+  <text x="927.5" y="363" class="text">linter + rules</text>
 
-  <rect x="820" y="395" width="200" height="44" rx="8" class="core"/>
-  <text x="920" y="418" class="text small">diagnostics</text>
+  <rect x="815" y="406" width="225" height="48" rx="8" class="core"/>
+  <text x="927.5" y="430" class="text">diagnostics</text>
 
-  <path d="M360 155 L790 250" class="arrow"/>
-  <path d="M720 155 L790 285" class="arrow"/>
-  <path d="M360 465 L420 155" class="arrow"/>
-  <path d="M720 465 L790 360" class="arrow"/>
+  <path d="M315 134 L705 134 L705 229 L815 229" class="arrow"/>
+  <path d="M315 304 L815 304" class="arrow"/>
+  <path d="M655 484 L710 484 L710 430 L815 430" class="arrow"/>
+  <path d="M185 428 L185 350" class="arrow"/>
 
-  <text x="610" y="250" class="text small">same lint_file path</text>
-  <text x="348" y="315" class="text small">LSP stdio</text>
+  <text x="493" y="118" class="small">run_cli → lint_file</text>
+  <text x="530" y="287" class="small">publishDiagnostics</text>
+  <text x="735" y="466" class="small">same analysis core</text>
 </svg>
